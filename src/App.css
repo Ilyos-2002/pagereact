@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -11,6 +12,16 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.Seryoz {
+  padding: 20px;
+  border: 2px dashed azure;
+  background-color: #fff;
+}
+
+.budiv {
+  background-color: #282c34;
 }
 
 .App-header {
@@ -32,6 +43,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

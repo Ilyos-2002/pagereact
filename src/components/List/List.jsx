@@ -3,14 +3,14 @@ import { Item } from "../Item"
 import "./List.css"
 
 export function List({ userData }) {
-    console.log(userData);
+    // console.log(userData);
     return (
         <div>
             <ul>
                 {
                     userData && userData.map((user, najim) => (
                         <Item key={najim}>
-                            <p>{user.id}</p>
+                            <p className="text-[red] ">{user.id}</p>
                             <Hrefx href={`/user/${user.id}`}>
                                 {user.first_name}
                             </Hrefx>

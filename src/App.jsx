@@ -14,23 +14,13 @@ function App() {
       .then(json => setData(json.data.data));
 
   }, []);
-
-
-
-
-
-
-
   return (
     <section>
       <Routes>
-        <Route path='/' element={<List userData={userData}> </List>}>
+        <Route exact path='/' element={<List userData={userData}> </List>}>
         </Route>
-
-        <Route path='/user/:userId' element={<Profile userData={userData}></Profile>}></Route>
+        <Route path='/user/:userId' element={<Profile userData={userData} />}></Route>
         {/* <h1>User list</h1> */}
-
-
       </Routes>
     </section>
   )

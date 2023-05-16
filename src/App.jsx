@@ -15,7 +15,7 @@ function App() {
 
   }, []);
   return (
-    <section>
+    <section className='flex flex-col  '>
       <Routes>
         <Route exact path='/' element={<List userData={userData}> </List>}>
         </Route>

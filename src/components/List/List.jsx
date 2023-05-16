@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Hrefx } from "../Href/"
 import { Item } from "../Item"
 import "./List.css"
@@ -11,9 +12,9 @@ export function List({ userData }) {
                     userData && userData.map((user, najim) => (
                         <Item key={najim}>
                             <p className="text-[red] ">{user.id}</p>
-                            <Hrefx href={`/user/${user.id}`}>
+                            <Link to={`/user/${user.id}`}>
                                 {user.first_name}
-                            </Hrefx>
+                            </Link>
                         </Item>
                     ))
                 }
